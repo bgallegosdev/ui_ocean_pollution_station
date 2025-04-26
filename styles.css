@@ -41,6 +41,7 @@ Light Sky Blue Foam - #00A8E8
     --DarkOceanBlue: #003459;
     --DarkSeafoam: #007EA7;
     --LightSkyBlueFoam: #00A8E8;
+    --DarkOceanBlueFaded: #003459ed;
 }
 
 /* 
@@ -51,17 +52,47 @@ Media Queries Breakpoints for Responsive Design
 
 /* Mobile */
 @media only screen and (max-width: 600px){
-    
+    #globeImg{
+        width: 80%;
+    }
+
+    #sectionOneHeaderContainer > p{
+        font-size: 2.5em;
+    }
+
+    #sectionOneHeaderContainer > h2{
+        font-size: 3.5em;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px){
+    #globeImg{
+        width: 50%;
+    }
 
+    #sectionOneHeaderContainer > p{
+        font-size: 3em;
+    }
+
+    #sectionOneHeaderContainer > h2{
+        font-size: 4em;
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1030px){
+    #globeImg{
+        width: 60%;
+    }
 
+    #sectionOneHeaderContainer > p{
+        font-size: 4em;
+    }
+
+    #sectionOneHeaderContainer > h2{
+        font-size: 7.5em;
+    }
 }
 
 /* 
@@ -71,5 +102,74 @@ Header Section
 */
 header{
     background-color: var(--DarkSeafoam);
-    color: white;
+    box-shadow: 1px 1px 8px #000000ce;
+}
+
+header > h1{
+    color: #ffffff;
+    font-family: "Cabin", sans-serif;
+    font-size: 2.5em;
+}
+
+header > span{
+    font-family: "DM Serif Text", serif;
+    color: #ffffff;
+    font-size: 1.1em;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+nav > div > ul{
+    font-family: "DM Serif Text", serif;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > div > ul > li{
+    padding-bottom: 5%;
+    font-size: 1.5em;
+}
+
+#mySidebar{
+    text-align: center;
+    background-color: var(--DarkOceanBlueFaded);
+    color: #ffffff;
+    z-index: 3;
+}
+
+#sidebarButton{
+    margin-top: 4%;
+    border-radius: 5px;
+}
+
+#signupBtn{
+    margin-top: 5%;
+    background-color: var(--LightSkyBlueFoam);
+    color: #000000;
+}
+
+#closeBtn{
+    text-align: right;
+}
+
+#globeImgContainer{
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#sectionOneHeaderContainer{
+    background-color: var(--DarkOceanBlue);
+    color: #ffffff;
+    z-index: 2;
+}
+
+#sectionOneHeaderContainer > p{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+#sectionOneHeaderContainer > h2{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
 }

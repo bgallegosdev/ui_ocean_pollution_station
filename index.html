@@ -19,35 +19,46 @@
 <body>
     <!-- Header Section -->
     <header class="w3-container">
-        <h1>Pollution Station</h1>
-        <span>Tracking Global and Local Issues</span>
         <!-- Nav Bar -->
         <nav>
-
-            <div>
+            <div class="w3-sidebar w3-bar-block w3-collapse" style="width:200px;right:0" id="mySidebar">
+                <button id="closeBtn" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-hide-large w3-dark-grey w3-text-white">Close &times;</button>
                 <ul>
                     <li>
-                        <a href="./index.html">Home</a>
+                        <a href="./index.html" class="w3-bar-item w3-button w3-center">Home</a>
                     </li>
                     <li>
-                        <a href="./imageGallery.html">Image Gallery</a>
+                        <a href="./imageGallery.html" class="w3-bar-item w3-button w3-center">Image Gallery</a>
                     </li>
                     <li>
-                        <a href="./timeline.html">Timeline</a>
+                        <a href="./timeline.html" class="w3-bar-item w3-button w3-center">Timeline</a>
                     </li>
                     <li>
-                        <a href="./about.html">About</a>
+                        <a href="./about.html" class="w3-bar-item w3-button w3-center">About</a>
                     </li>
                     <li>
-                        <button>Sign Up</button>
+                        <button id="signupBtn" class="w3-button w3-round-large">Sign Up</button>
                     </li>
                 </ul>
             </div>
+
+            <button id="sidebarButton" class="w3-button w3-black w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
         </nav>
+        <h1>Pollution Station</h1>
+        <span>Tracking Global and Local Issues</span>
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main class="w3-main">
+        <!-- Animated Globe Image -->
+        <div id="globeImgContainer" class="w3-container">
+            <img id="globeImg" class="w3-image w3-spin" src="./images/globe.svg" alt="Globe Image" title="Globe Image">
+        </div>
+
+        <div id="sectionOneHeaderContainer" class="w3-container">
+            <p>Let's Talk About...</p>
+            <h2>THE GREAT PACIFIC GARBAGE PATCH</h2>
+        </div>
 
     </main>
 
@@ -56,5 +67,15 @@
 
     </footer>
     
+    <!-- Script from W3Schools - Sidebar Tutorial -->
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
