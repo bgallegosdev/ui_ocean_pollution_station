@@ -57,6 +57,8 @@ Media Queries Breakpoints for Responsive Design
     Article/Main Section
     ***********************
     */
+
+    /* Section One */
     #globeImg{
         width: 80%;
     }
@@ -87,6 +89,25 @@ Media Queries Breakpoints for Responsive Design
         font-size: 1.5em;
     }
     
+    /* Section Two */
+    div > h5{
+        font-size: 4em;
+    }
+
+    .sectionTwoGrid{
+        grid-template-columns: auto;
+    }
+
+    .gridCards{
+        padding: 5%;
+        margin: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .cardText{
+        font-size: 1.6em;
+    }
 }
 
 /* Tablet */
@@ -96,6 +117,8 @@ Media Queries Breakpoints for Responsive Design
     Article/Main Section
     ***********************
     */
+
+    /* Section One */
     #globeImg{
         width: 50%;
     }
@@ -125,6 +148,26 @@ Media Queries Breakpoints for Responsive Design
         margin-right: 10%;
         font-size: 2em;
     }
+
+    /* Section Two */
+    div > h5{
+        font-size: 5em;
+    }
+
+    .sectionTwoGrid{
+        grid-template-columns: auto auto;
+    }
+
+    .gridCards{
+        padding: 5%;
+        margin: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .cardText{
+        font-size: 1.8em;
+    }
 }
 
 /* Desktop */
@@ -134,6 +177,8 @@ Media Queries Breakpoints for Responsive Design
     Article/Main Section
     ***********************
     */
+
+    /* Section One */
     #globeImg{
         width: 60%;
     }
@@ -167,6 +212,26 @@ Media Queries Breakpoints for Responsive Design
     /* Images */
     .articleImg{
         width: 60%;
+    }
+
+    /* Section Two */
+    div > h5{
+        font-size: 6em;
+    }
+
+    .sectionTwoGrid{
+        grid-template-columns: auto auto auto;
+    }
+
+    .gridCards{
+        padding: 8%;
+        margin: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .cardText{
+        font-size: 2em;
     }
 }
 
@@ -301,7 +366,23 @@ p > a:active{
     color: blue;
 }
 
-/* Article One */
+span > a:link{
+    color: var(--DarkSeafoam);
+}
+
+span > a:visited{
+    color: #51027f;
+}
+
+span > a:hover{
+    color: var(--DarkOceanBlue);
+}
+
+span > a:active{
+    color: blue;
+}
+
+/* Section One */
 article > h3{
     font-family: "Cabin", sans-serif;
     text-align: center;
@@ -315,4 +396,28 @@ article > h4{
 article > p{
     line-height: 1.6;
     font-family: "DM Serif Text", serif;
+}
+
+/* Section Two */
+.sectionTwoContainer{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: var(--DeepDarkBlueGreen);
+    height: auto;
+}
+
+div > h5{
+    font-family: "Cabin", sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cardText{
+    line-height: 1.5;
+    font-family: "DM Serif Text", serif;
+}
+
+.cardTextSource{
+    font-family: "DM Serif Text", serif;
+    font-size: 1.1em;
 }
