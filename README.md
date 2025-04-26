@@ -3,6 +3,12 @@ Semester project for Interface Design class. Purpose: to make a well designed, r
 
 
 Website Resources Cited:
+Site - The Ocean Cleanup: https://theoceancleanup.com/great-pacific-garbage-patch/
+
+Site – National Oceanic and Atmospheric Administration: https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-pollution 
+
+Site – National Geographic Article: https://education.nationalgeographic.org/resource/marine-pollution/ 
+
 
 Images/Media Cited:
 Evericons - Icons - https://www.figma.com/community/file/1299091453336389256
