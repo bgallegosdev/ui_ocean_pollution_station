@@ -12,4 +12,4 @@ Site – National Geographic Article: https://education.nationalgeographic.org/r
 
 Images/Media Cited:
 Evericons - Icons - https://www.figma.com/community/file/1299091453336389256
-
+Fish in Glove Image - Photo by Nataliya Vaitkevich: https://www.pexels.com/photo/gray-fish-in-a-plastic-glove-on-gray-sand-4813971/
