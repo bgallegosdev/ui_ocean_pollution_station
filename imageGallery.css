@@ -120,6 +120,14 @@ Media Queries Breakpoints for Responsive Design
         line-height: 1.6;
         font-size: 1.8em;
     }
+
+    .imgGalleryGridContainer{
+        grid-template-columns: auto auto auto;
+    }
+
+    .footerSection{
+        margin-top: 10%;
+    }
 }
 
 /* 
