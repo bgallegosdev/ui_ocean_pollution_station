@@ -144,6 +144,32 @@ Media Queries Breakpoints for Responsive Design
         padding: 0;
         font-size: 3em;
     }
+
+    #footerSubHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    .footerGrid{
+        grid-template-columns: auto;
+    }
+
+    .footerGridItem{
+        padding: 2%;
+    }
+
+    .footerGridHeader{
+        font-size: 1.7em;
+    }
+
+    .footerListItems{
+        font-size: 1.3em;
+    }
+
+    .footerLinks{
+        font-size: 1.3em;
+    }
 }
 
 /* Tablet */
@@ -230,6 +256,40 @@ Media Queries Breakpoints for Responsive Design
         margin-bottom: 5%;
         gap: 3%;
     }
+
+    /* Footer Section */
+
+    #footerHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 4em;
+    }
+
+    #footerSubHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    .footerGrid{
+        grid-template-columns: auto auto;
+    }
+
+    .footerGridItem{
+        padding: 2%;
+    }
+
+    .footerGridHeader{
+        font-size: 1.8em;
+    }
+
+    .footerListItems{
+        font-size: 1.5em;
+    }
+
+    .footerLinks{
+        font-size: 1.5em;
+    }
 }
 
 /* Desktop */
@@ -315,6 +375,44 @@ Media Queries Breakpoints for Responsive Design
 
     .cardTextOther{
         font-size: 2em;
+    }
+
+    /* Footer Section */
+
+    #footerHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 4em;
+    }
+
+    #footerSubHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+    }
+
+    .footerGrid{
+        grid-template-columns: auto auto;
+    }
+
+    .footerGridItem{
+        padding: 5%;
+    }
+
+    /* .footerSiteList{
+        margin-right: 50%;
+    } */
+
+    .footerGridHeader{
+        font-size: 1.5em;
+    }
+
+    .footerListItems{
+        font-size: 1.5em;
+    }
+
+    .footerLinks{
+        font-size: 1.5em;
     }
 }
 
@@ -531,4 +629,31 @@ article > h6{
 
 #footerHeader{
     font-family: "Cabin", sans-serif;
+}
+
+#footerSubHeader{
+    font-family: "DM Serif Text", serif;
+}
+
+.footerGridHeader{
+    font-family: "DM Serif Text", serif;
+}
+
+.footerSiteList{
+    list-style: none;
+}
+
+.footerListItems{
+    font-family: "DM Serif Text", serif;
+}
+
+.footerLinks{
+    text-decoration: none;
+    font-family: "DM Serif Text", serif;
+    color: #ffffff;
+}
+
+.footerLinks:hover{
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px #000000;
 }
