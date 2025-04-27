@@ -1,0 +1,151 @@
+/* 
+***********************
+imageGallery.html styling page 
+***********************
+*/
+
+/* Google Fonts CSS */
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cabin-font {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* 
+***********************
+CSS Variables - Color Palette
+***********************
+white - #FFFFFF
+Deep Dark BlueGreen - #00171F
+Dark Ocean Blue - #003459
+Dark Seafoam - #007EA7
+Light Sky Blue Foam - #00A8E8
+*/
+:root{
+    --DeepDarkBlueGreen: #00171F;
+    --DarkOceanBlue: #003459;
+    --DarkSeafoam: #007EA7;
+    --LightSkyBlueFoam: #00A8E8;
+    --DarkOceanBlueFaded: #003459ed;
+}
+
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
+
+/* Mobile */
+@media only screen and (max-width: 600px){
+    #imgGalleryHeader{
+        font-size: 3em;
+    }
+
+    .imgGallerySubHeaderText{
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 1.6;
+        font-size: 1.2em;
+    }
+
+    .gridItemText{
+        font-size: 1.2em;
+    }
+
+    .imgGalleryGridContainer{
+        grid-template-columns: auto auto;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;
+    }
+
+    .footerSection{
+        margin-top: 50%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px){
+    #imgGalleryHeader{
+        font-size: 4em;
+    }
+
+    .imgGallerySubHeaderText{
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 1.6;
+        font-size: 1.5em;
+    }
+
+    .gridItemText{
+        font-size: 1.4em;
+    }
+
+    .imgGalleryGridContainer{
+        grid-template-columns: auto auto;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;
+    }
+
+    .footerSection{
+        margin-top: 30%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1030px){
+    #imgGalleryHeader{
+        font-size: 5em;
+    }
+
+    .imgGallerySubHeaderText{
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 1.6;
+        font-size: 1.8em;
+    }
+}
+
+/* 
+***********************
+IMAGE GALLERY CSS
+***********************
+*/
+
+#imgGalleryHeader{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+.imgGallerySubHeader{
+    background-color: var(--DarkOceanBlue);
+}
+
+.imgGallerySubHeaderText{
+    font-family: "DM Serif Text", serif;
+    color: #ffffff;
+}
+
+.gridItemImg{
+    width: 100%;
+}
+
+.gridItemText{
+    font-family: "Cabin", sans-serif;
+}

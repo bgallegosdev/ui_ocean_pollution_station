@@ -194,7 +194,7 @@ Media Queries Breakpoints for Responsive Design
     ***********************
     Header Section
     ***********************
-    */
+    */   
     header > h1{
         font-size: 3.5em;
     }
@@ -322,6 +322,14 @@ Media Queries Breakpoints for Responsive Design
 
     .footerLinks{
         font-size: 1.5em;
+    }
+}
+
+/* Sticky Header for Under Desktop Screens */
+@media only screen and (max-width: 1030px){
+    header{
+        position: sticky;
+        top: 0;
     }
 }
 
@@ -498,6 +506,12 @@ Media Queries Breakpoints for Responsive Design
 
 /* 
 ***********************
+GLOBAL CSS
+***********************
+*/
+
+/* 
+***********************
 Header Section
 ***********************
 */
@@ -558,15 +572,15 @@ Article/Main Section
 */
 
 #globeImgContainer{
-    position: relative;
+    /* position: relative; */
     text-align: center;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 #sectionOneHeaderContainer{
     background-color: var(--DarkOceanBlue);
     color: #ffffff;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 #sectionOneHeaderContainer > p{

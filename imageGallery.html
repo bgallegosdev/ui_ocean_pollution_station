@@ -3,9 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pollution Station - Image Gallery</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="imageGallery.css">
+
+    <!-- Google Fonts Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- CSS Framework - w3css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="w3-container">
+        <!-- Nav Bar -->
+        <nav>
+            <!-- Nav Bar for Smaller Screens -->
+            <div class="w3-sidebar w3-bar-block" style="width:200px;right:0;display:none;" id="mySidebar">
+                <button id="closeBtn" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-dark-grey w3-text-white">Close &times;</button>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="w3-bar-item w3-button w3-center">Home</a>
+                    </li>
+                    <li>
+                        <a href="./imageGallery.html" class="w3-bar-item w3-button w3-center">Image Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./timeline.html" class="w3-bar-item w3-button w3-center">Timeline</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="w3-bar-item w3-button w3-center">About</a>
+                    </li>
+                    <li>
+                        <button id="signupBtn" class="w3-button w3-round-large">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <button id="sidebarButton" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
+        </nav>
+
+        <div class="headerBar">
+            <div>
+                <h1>Pollution Station</h1>
+                <span>Tracking Global and Local Issues</span>
+            </div>
+
+                <!-- Nav Bar For Desktop Screens -->
+                <div class="bigScreenNav">
+                    <a href="./index.html" class="bigScreenNavLinks">Home</a>
+                    <a href="./imageGallery.html" class="bigScreenNavLinks">Image Gallery</a>
+                    <a href="./timeline.html" class="bigScreenNavLinks">Timeline</a>
+                    <a href="./about.html" class="bigScreenNavLinks">About</a>
+                </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="w3-main">
+        <div class="w3-container">
+            <h1 id="imgGalleryHeader">Image Gallery</h1>
+        </div>
+
+        <div class="w3-container imgGallerySubHeader">
+            <p class="imgGallerySubHeaderText">Please Note: All images seen in the gallery below are credited to several different websites, photographers, and artists. We do not own the rights to these images and the images are being used for educational purposes only.</p>
+            <p class="imgGallerySubHeaderText">Images in this gallery have been designated by the owners to be either Free Use, Educational, or Editorial Use open licenses.</p>
+        </div>
+
+        <!-- Grid Section -->
+         <div class="w3-grid imgGalleryGridContainer">
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_one_220604_The_Ocean_Cleanup_Honduras_Beach_Pollution-scaled.jpg" alt="Plastic on Honduras Beach" title="Plastic on Honduras " class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Pollution on Honduras Beach | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_two_181122_TOC_System001_Mission_Recovering_GhostNet-4.jpg" alt="Crew Bringing in Ghostnet" title="Crew Bringing in Ghostnet" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Ocean Cleanup Bringing in Ghostnet | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_three_The-Ocean-Cleanup-Last-Trip-System-002-Cleaning-Deck-Big-Catch-scaled.jpg" alt="Sorting Plastics on Ship" title="Sorting Plastics on Ship" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Ocean Cleanup's System 02 Plastic Sorting | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_four_211008-Oceans-System-002-Trip-2-Offload-S1H-DvdK-85-scaled.jpg" alt="Emptyping Pollution Net on Ship" title="Emptyping Pollution Net on Ship" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Ocean Cleanup's System 02 Emptying Net | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_five_TheOceanCleanup-FlashFlood-Guatemala-Interceptor006-240409-scaled.jpg" alt="Plastic Pollution in Guatemala River" title="Plastic Pollution in Guatemala River" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Plastic Pollution in Guatemala River | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_six_Panama-City-1.jpg" alt="Panama Pollution on Beach" title="Panama Pollution on Beach" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Panama Pollution on Beach | <a class="gridItemLink" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_seven_pexels-collab-media-173741945-15060365.jpg" alt="Plastic Pollution on Riverbank" title="Plastic Pollution on Riverbank" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Plastic Pollution on Riverbank | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/plastic-waste-on-a-riverbank-15060365/" target="_blank">Collab Media</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_eight_pexels-mrwandart-2827735.jpg" alt="Garbage on the Beach" title="Garbage on the Beach" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Garbage on the Beach | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/piles-of-garbage-by-the-shore-2827735/" target="_blank">Lucien Wanda</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_nine_pexels-babijaphoto-17658839.jpg" alt="Pile of Garbage on the Ocean Beach" title="Pile of Garbage on the Ocean Beach" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Pile of Garbage on the Ocean Beach | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/rubbish-on-beach-17658839/" target="_blank">J B</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_ten_pexels-yogendras31-2480807.jpg" alt="Trash Pollution in India River" title="Trash Pollution in India River" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Trash Pollution in India River | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/garbage-on-body-of-water-2480807/" target="_blank">Yogendra Singh</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_eleven_pexels-dylannhendricks-16884368.jpg" alt="Plastic Bottles by Water" title="Plastic Bottles by Water" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Plastic Bottles by Water | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/plastic-bottles-in-water-16884368/" target="_blank">Dylann Hendricks</a></p>
+                </div>
+            </div>
+
+            <div class="w3-card-4 w3-round-large imgGridItem">
+                <img src="./images/image_gallery_twelve_pexels-cagrikanmaz-27798144.jpg" alt="Plastic Bottles and Oil in Water" title="Plastic Bottles and Oil in Water" class="gridItemImg">
+                <div class="w3-container w3-center gridTextContainer">
+                    <p class="gridItemText">Plastic Bottles and Oil in Water | Photo by <a class="gridItemLink" href="https://www.pexels.com/photo/plastic-waste-and-pollution-floating-on-contaminated-water-surface-27798144/" target="_blank">Cagri Kanmaz</a></p>
+                </div>
+            </div>
+
+         </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w3-container w3-dark-grey footerSection">
+        <div>
+            <p id="footerHeader">Pollution Station</p>
+            <p id="footerSubHeader">*This site is for educational purposes only.</p>
+        </div>
+
+        <!-- Grid Section -->
+         <div class="w3-grid footerGrid">
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Class Information:</p>
+
+                <ul class="footerSiteList">
+                    <li class="footerListItems">
+                        College: Collin College
+                    </li>
+                    <li class="footerListItems">
+                        Class: Interface Design
+                    </li>
+                    <li class="footerListItems">
+                        Student: Benjamin Gallegos
+                    </li>
+                    <li class="footerListItems">
+                        Last Edited: 04/27/2025
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Articles:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./imageGallery.html">Image Gallery</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./timeline.html">Timeline</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Resources Cited:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/" target="_blank">The Ocean Cleanup</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/great-pacific-garbage-patch/" target="_blank">The Ocean Cleanup - GPGP</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-pollution" target="_blank">National Oceanic and Atmospheric Administration</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://education.nationalgeographic.org/resource/marine-pollution/" target="_blank">National Geographic Article</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://www.conservation.org/stories/ocean-pollution-facts" target="_blank">Conservation International</a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="footerLinks" href="https://doi.org/10.1787/de747aef-en" target="_blank">OECD (2022), Global Plastics Outlook: Economic Drivers, Environmental Impacts and Policy Options, OECD Publishing, Paris</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Image/Media Credits:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup - Gallery & Article Images</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.figma.com/community/file/1299091453336389256" target="_blank">Evericons - Icons</a>
+                    </li>
+                </ul>
+
+                <p id="footerNote">*The use of these images is for education purposes only. All rights remain with the image owners/designers.</p>
+            </div>
+
+         </div>
+    </footer>
     
+    <!-- Script from W3Schools - Sidebar Tutorial -->
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
