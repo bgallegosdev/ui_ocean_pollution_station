@@ -108,6 +108,15 @@ Media Queries Breakpoints for Responsive Design
     .cardText{
         font-size: 1.6em;
     }
+
+    /* Section Three */
+    .sectionThreeLists{
+        font-size: 1.4em;
+    }
+
+    article > h6{
+        font-size: 3em;
+    }
 }
 
 /* Tablet */
@@ -167,6 +176,15 @@ Media Queries Breakpoints for Responsive Design
 
     .cardText{
         font-size: 1.8em;
+    }
+
+    /* Section Three */
+    .sectionThreeLists{
+        font-size: 2em;
+    }
+
+    article > h6{
+        font-size: 4.5em;
     }
 }
 
@@ -232,6 +250,15 @@ Media Queries Breakpoints for Responsive Design
 
     .cardText{
         font-size: 2em;
+    }
+
+    /* Section Three */
+    .sectionThreeLists{
+        font-size: 2.2em;
+    }
+
+    article > h6{
+        font-size: 5em;
     }
 }
 
@@ -420,4 +447,14 @@ div > h5{
 .cardTextSource{
     font-family: "DM Serif Text", serif;
     font-size: 1.1em;
+}
+
+/* Section Three */
+.sectionThreeLists{
+    font-family: "Cabin", sans-serif;
+}
+
+article > h6{
+    font-family: "Cabin", sans-serif;
+    text-align: center;
 }
