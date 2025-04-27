@@ -21,6 +21,7 @@
     <header class="w3-container">
         <!-- Nav Bar -->
         <nav>
+            <!-- Nav Bar for Smaller Screens -->
             <div class="w3-sidebar w3-bar-block" style="width:200px;right:0;display:none;" id="mySidebar">
                 <button id="closeBtn" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-dark-grey w3-text-white">Close &times;</button>
                 <ul>
@@ -44,15 +45,28 @@
 
             <button id="sidebarButton" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
         </nav>
-        <h1>Pollution Station</h1>
-        <span>Tracking Global and Local Issues</span>
+
+        <div class="headerBar">
+            <div>
+                <h1>Pollution Station</h1>
+                <span>Tracking Global and Local Issues</span>
+            </div>
+
+                <!-- Nav Bar For Desktop Screens -->
+                <div class="bigScreenNav">
+                    <a href="./index.html" class="bigScreenNavLinks">Home</a>
+                    <a href="./imageGallery.html" class="bigScreenNavLinks">Image Gallery</a>
+                    <a href="./timeline.html" class="bigScreenNavLinks">Timeline</a>
+                    <a href="./about.html" class="bigScreenNavLinks">About</a>
+                </div>
+        </div>
     </header>
 
     <!-- Main Section -->
     <main class="w3-main">
         <!-- Animated Globe Image -->
         <div id="globeImgContainer" class="w3-container">
-            <img id="globeImg" class="w3-image w3-spin" src="./images/globe.svg" alt="Globe Image" title="Globe Image">
+            <img id="globeImg" class="w3-image" src="./images/globe.svg" alt="Globe Image" title="Globe Image">
         </div>
 
         <div id="sectionOneHeaderContainer" class="w3-container">

@@ -54,6 +54,22 @@ Media Queries Breakpoints for Responsive Design
 @media only screen and (max-width: 600px){
     /* 
     ***********************
+    Header Section
+    ***********************
+    */
+    header > h1{
+        font-size: 2.5em;
+    }
+
+    header > span{
+        font-size: 1.1em;
+    }
+
+    .bigScreenNav{
+        display: none;
+    }
+    /* 
+    ***********************
     Article/Main Section
     ***********************
     */
@@ -176,6 +192,23 @@ Media Queries Breakpoints for Responsive Design
 @media only screen and (min-width: 600px){
     /* 
     ***********************
+    Header Section
+    ***********************
+    */
+    header > h1{
+        font-size: 3.5em;
+    }
+
+    header > span{
+        font-size: 1.5em;
+    }
+
+    .bigScreenNav{
+        display: none;
+    }
+
+    /* 
+    ***********************
     Article/Main Section
     ***********************
     */
@@ -294,6 +327,53 @@ Media Queries Breakpoints for Responsive Design
 
 /* Desktop */
 @media only screen and (min-width: 1030px){
+    /* 
+    ***********************
+    Header Section
+    ***********************
+    */
+    .headerBar{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    header > div > div > h1{
+        display: inline;
+        padding-right: 15px;
+        font-size: 4em;
+    }
+
+    header > div > div > span{
+        font-size: 1.5em;
+    }
+
+    .bigScreenNav{
+        display: flex;
+        gap: 50px;
+    }
+
+    .bigScreenNavLinks{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2em;
+        font-family: "DM Serif Text", serif;
+    }
+
+    .bigScreenNavLinks:hover{
+        text-decoration: underline;
+        text-shadow: 1px 1px 3px var(--DarkOceanBlue);
+    }
+
+    .bigScreenNavLinks:active{
+        text-decoration: none;
+        color: var(--DeepDarkBlueGreen);
+    }
+
+    #sidebarButton{
+        display: none;
+    }
+
     /* 
     ***********************
     Article/Main Section
@@ -426,16 +506,14 @@ header{
     box-shadow: 1px 1px 8px #000000ce;
 }
 
-header > h1{
+header > div > div > h1{
     color: #ffffff;
     font-family: "Cabin", sans-serif;
-    font-size: 2.5em;
 }
 
-header > span{
+header > div > div > span{
     font-family: "DM Serif Text", serif;
     color: #ffffff;
-    font-size: 1.1em;
     display: inline-block;
     padding-bottom: 5px;
 }
