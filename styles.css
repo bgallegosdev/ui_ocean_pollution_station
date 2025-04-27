@@ -117,6 +117,33 @@ Media Queries Breakpoints for Responsive Design
     article > h6{
         font-size: 3em;
     }
+
+    /* Other Articles Section */
+    .otherHeader{
+        font-size: 3em;
+    }
+
+    .cardTextOther{
+        font-size: 1.8em;
+    }
+
+    .sectionFourGrid{
+        grid-template-columns: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        gap: 3%;
+    }
+
+    /* Footer Section */
+    .footerSection{
+        margin-top: 25%;
+    }
+
+    #footerHeader{
+        margin: 0;
+        padding: 0;
+        font-size: 3em;
+    }
 }
 
 /* Tablet */
@@ -185,6 +212,23 @@ Media Queries Breakpoints for Responsive Design
 
     article > h6{
         font-size: 4.5em;
+    }
+
+    /* Other Articles Section */
+    .otherHeader{
+        font-size: 3em;
+    }
+
+    .cardTextOther{
+        font-size: 1.4em;
+    }
+
+    .sectionFourGrid{
+        grid-template-columns: auto auto auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        gap: 3%;
     }
 }
 
@@ -258,7 +302,19 @@ Media Queries Breakpoints for Responsive Design
     }
 
     article > h6{
-        font-size: 5em;
+        font-size: 6em;
+    }
+
+    .sectionFourGrid{
+        grid-template-columns: auto auto auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        gap: 5%;
+    }
+
+    .cardTextOther{
+        font-size: 2em;
     }
 }
 
@@ -457,4 +513,22 @@ div > h5{
 article > h6{
     font-family: "Cabin", sans-serif;
     text-align: center;
+}
+
+/* Other Articles Section */
+.otherHeader{
+    font-family: "Cabin", sans-serif;
+}
+
+.cardTextOther{
+    font-family: "DM Serif Text", serif;
+}
+
+/* Footer Section */
+.footerSection{
+    background-color: #545454;
+}
+
+#footerHeader{
+    font-family: "Cabin", sans-serif;
 }

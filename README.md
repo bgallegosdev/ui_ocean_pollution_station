@@ -12,3 +12,5 @@ Site - OECD (2022), Global Plastics Outlook: Economic Drivers, Environmental Imp
 Images/Media Cited:
 Evericons - Icons - https://www.figma.com/community/file/1299091453336389256
 Fish in Glove Image - Photo by Nataliya Vaitkevich: https://www.pexels.com/photo/gray-fish-in-a-plastic-glove-on-gray-sand-4813971/
+Ocean Waves Image - Photo by Muffin Creatives: https://www.pexels.com/photo/ocean-waves-1646311/
+Green Calendar Image - Photo by Towfiqu barbhuiya: https://www.pexels.com/photo/pin-and-pen-on-calendar-11363590/
