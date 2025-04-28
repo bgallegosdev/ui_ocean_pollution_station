@@ -52,15 +52,88 @@ Media Queries Breakpoints for Responsive Design
 
 /* Mobile */
 @media only screen and (max-width: 600px){
+    #aboutHeader{
+        font-size: 2.5em;
+    }
 
+    .aboutNameContainer > span{
+        font-size: 2em;
+    }
+
+    #aboutNoticeText{
+        font-size: 1.2em;
+    }
+
+    #aboutBioText{
+        font-size: 1.7em;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px){
+    #aboutHeader{
+        font-size: 3.5em;
+    }
 
+    .aboutNameContainer > span{
+        font-size: 3em;
+    }
+
+    #aboutNoticeText{
+        font-size: 1.6em;
+    }
+
+    #aboutBioText{
+        font-size: 2em;
+    }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1030px){
 
+}
+
+/* 
+***********************
+ABOUT CSS
+***********************
+*/
+#aboutHeader{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+.aboutNameContainer{
+    display: inline;
+    font-family: "DM Serif Text", serif;
+}
+
+.aboutNameContainer > span{
+    color: var(--DarkSeafoam);
+    padding-right: 5%;
+}
+
+.aboutNameContainer > a{
+    padding-right: 5%;
+}
+
+.aboutNoticeContainer{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#aboutNoticeText{
+    font-family: "DM Serif Text", serif;
+}
+
+.aboutBioContainer{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#aboutBioText{
+    font-family: "DM Serif Text", serif;
 }
