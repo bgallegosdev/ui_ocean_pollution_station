@@ -9,6 +9,15 @@ Site – National Geographic Article: https://education.nationalgeographic.org/r
 Site – Conservation International: https://www.conservation.org/stories/ocean-pollution-facts 
 Site - OECD (2022), Global Plastics Outlook: Economic Drivers, Environmental Impacts and Policy Options, OECD Publishing, Paris, https://doi.org/10.1787/de747aef-en.
 
+(Timeline Facts/Research):
+Site - The Ocean Cleanup: https://theoceancleanup.com/great-pacific-garbage-patch/
+Site - Oceanography Magazine: https://tos.org/oceanography/article/the-story-of-plastic-pollution-from-the-distant-ocean-gyres-to-the-global-policy-stage
+Site - Streamline: https://www.brandedbystreamline.com/a-timeline-of-plastic-pollution/
+Site - National Ocean Service: https://oceanservice.noaa.gov/education/tutorial_pollution/02history.html
+Site - UN Environment Programme: https://www.unep.org/news-and-stories/story/birth-ban-history-plastic-shopping-bag
+Site - Rolling Stone: https://www.rollingstone.com/politics/politics-news/the-plastic-bag-wars-243547/
+
+
 Images/Media Cited:
 Evericons - Icons - https://www.figma.com/community/file/1299091453336389256
 Fish in Glove Image - Photo by Nataliya Vaitkevich: https://www.pexels.com/photo/gray-fish-in-a-plastic-glove-on-gray-sand-4813971/

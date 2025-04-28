@@ -52,15 +52,65 @@ Media Queries Breakpoints for Responsive Design
 
 /* Mobile */
 @media only screen and (max-width: 600px){
+    #timelineHeader{
+        font-size: 3em;
+    }
+
+    .timelineGridText{
+        font-size: 1.1em;
+    }
 
 }
 
 /* Tablet */
 @media only screen and (min-width: 600px){
+    #timelineHeader{
+        font-size: 4em;
+    }
+
+    .timelineGridText{
+        font-size: 1.5em;
+    }
 
 }
 
 /* Desktop */
 @media only screen and (min-width: 1030px){
+    #timelineHeader{
+        font-size: 5em;
+    }
 
+    .timelineGridText{
+        font-size: 1.7em;
+    }
+}
+
+/* 
+***********************
+TIMELINE CSS
+***********************
+*/
+#timelineHeader{
+    text-align: center;
+    font-family: "DM Serif Text", serif;
+}
+
+#timelineContainer{
+    background-color: var(--DeepDarkBlueGreen);
+}
+
+#timelineContainer{
+    grid-template-columns: auto auto;
+    padding: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.timelineGridItem{
+    padding-top: 7%;
+}
+
+.timelineGridText{
+    color: #FFFFFF;
+    font-family: "DM Serif Text", serif;
 }

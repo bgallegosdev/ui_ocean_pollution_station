@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pollution Station - About the Developer</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="about.css">
+    
+        <!-- Google Fonts Stylesheet -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    
+        <!-- CSS Framework - w3css -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="w3-container">
+        <!-- Nav Bar -->
+        <nav>
+            <!-- Nav Bar for Smaller Screens -->
+            <div class="w3-sidebar w3-bar-block" style="width:200px;right:0;display:none;" id="mySidebar">
+                <button id="closeBtn" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-dark-grey w3-text-white">Close &times;</button>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="w3-bar-item w3-button w3-center">Home</a>
+                    </li>
+                    <li>
+                        <a href="./imageGallery.html" class="w3-bar-item w3-button w3-center">Image Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./timeline.html" class="w3-bar-item w3-button w3-center">Timeline</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="w3-bar-item w3-button w3-center">About</a>
+                    </li>
+                    <li>
+                        <button id="signupBtn" class="w3-button w3-round-large">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <button id="sidebarButton" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
+        </nav>
+
+        <div class="headerBar">
+            <div>
+                <h1>Pollution Station</h1>
+                <span>Tracking Global and Local Issues</span>
+            </div>
+
+                <!-- Nav Bar For Desktop Screens -->
+                <div class="bigScreenNav">
+                    <a href="./index.html" class="bigScreenNavLinks">Home</a>
+                    <a href="./imageGallery.html" class="bigScreenNavLinks">Image Gallery</a>
+                    <a href="./timeline.html" class="bigScreenNavLinks">Timeline</a>
+                    <a href="./about.html" class="bigScreenNavLinks">About</a>
+                </div>
+        </div>
+    </header>
     
+    <!-- Main Section -->
+    <main class="w3-main">
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w3-container w3-dark-grey footerSection">
+        <div>
+            <p id="footerHeader">Pollution Station</p>
+            <p id="footerSubHeader">*This site is for educational purposes only.</p>
+        </div>
+
+        <!-- Grid Section -->
+            <div class="w3-grid footerGrid">
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Class Information:</p>
+
+                <ul class="footerSiteList">
+                    <li class="footerListItems">
+                        College: Collin College
+                    </li>
+                    <li class="footerListItems">
+                        Class: Interface Design
+                    </li>
+                    <li class="footerListItems">
+                        Student: Benjamin Gallegos
+                    </li>
+                    <li class="footerListItems">
+                        Last Edited: 04/27/2025
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Articles:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./imageGallery.html">Image Gallery</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./timeline.html">Timeline</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Resources Cited:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/" target="_blank">The Ocean Cleanup</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/great-pacific-garbage-patch/" target="_blank">The Ocean Cleanup - GPGP</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-pollution" target="_blank">National Oceanic and Atmospheric Administration</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://education.nationalgeographic.org/resource/marine-pollution/" target="_blank">National Geographic Article</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://www.conservation.org/stories/ocean-pollution-facts" target="_blank">Conservation International</a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="footerLinks" href="https://doi.org/10.1787/de747aef-en" target="_blank">OECD (2022), Global Plastics Outlook: Economic Drivers, Environmental Impacts and Policy Options, OECD Publishing, Paris</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Image/Media Credits:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup - Gallery & Article Images</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.figma.com/community/file/1299091453336389256" target="_blank">Evericons - Icons</a>
+                    </li>
+                </ul>
+
+                <p id="footerNote">*The use of these images is for education purposes only. All rights remain with the image owners/designers.</p>
+            </div>
+
+            </div>
+    </footer>
+
+    <!-- Script from W3Schools - Sidebar Tutorial -->
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>

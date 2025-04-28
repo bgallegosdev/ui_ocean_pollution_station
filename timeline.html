@@ -3,9 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pollution Station - Modern Pollution Timeline</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeline.css">
+
+    <!-- Google Fonts Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- CSS Framework - w3css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="w3-container">
+        <!-- Nav Bar -->
+        <nav>
+            <!-- Nav Bar for Smaller Screens -->
+            <div class="w3-sidebar w3-bar-block" style="width:200px;right:0;display:none;" id="mySidebar">
+                <button id="closeBtn" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-dark-grey w3-text-white">Close &times;</button>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="w3-bar-item w3-button w3-center">Home</a>
+                    </li>
+                    <li>
+                        <a href="./imageGallery.html" class="w3-bar-item w3-button w3-center">Image Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./timeline.html" class="w3-bar-item w3-button w3-center">Timeline</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" class="w3-bar-item w3-button w3-center">About</a>
+                    </li>
+                    <li>
+                        <button id="signupBtn" class="w3-button w3-round-large">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <button id="sidebarButton" class="w3-button w3-black w3-xlarge w3-right" onclick="w3_open()">&#9776;</button>
+        </nav>
+
+        <div class="headerBar">
+            <div>
+                <h1>Pollution Station</h1>
+                <span>Tracking Global and Local Issues</span>
+            </div>
+
+                <!-- Nav Bar For Desktop Screens -->
+                <div class="bigScreenNav">
+                    <a href="./index.html" class="bigScreenNavLinks">Home</a>
+                    <a href="./imageGallery.html" class="bigScreenNavLinks">Image Gallery</a>
+                    <a href="./timeline.html" class="bigScreenNavLinks">Timeline</a>
+                    <a href="./about.html" class="bigScreenNavLinks">About</a>
+                </div>
+        </div>
+    </header>
     
+    <!-- Main Section -->
+    <main class="w3-main">
+        <div class="w3-container">
+            <h1 id="timelineHeader">Timeline of Modern Oceanic Pollution</h1>
+        </div>
+
+        <div id="timelineContainer" class="w3-grid">
+            <!-- Timeline One -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/shopping_bag_icon.svg" alt="Shopping Bag Icon" title="Shopping Bag Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">Plastic grows into the food industry in the 1950s to 1970s, moving from reusable utensils and plates into single-use plastic items including plastic bags that were invented by engineer Sten Gustaf Thulin. The growth in popularity is the start of plastics pollution.</p>
+            </div>
+
+            <!-- Timeline Two -->
+            <div class="timelineGridItem">
+                <p class="timelineGridText">In the 1970s - 1980s, large supermarkets start to take onto the growing trend of plastic bags for its customers from the paper bag norm. Towards the end of this decade, the plastic bag was the most used brining the rise in plastic waste.</p>
+            </div>
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/shopping_cart_icon.svg" alt="Shopping Cart Icon" title="Shopping Cart Icon">
+            </div>
+
+            <!-- Timeline Three -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/meter_icon.svg" alt="Meter Icon" title="Meter Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">Other than plastics, there are other areas of pollution that begin to catch the attention of local and federal government's concerns. In the1960s-1970s, Runoff and oil discharge is noticed to be a large contribution to fires occurring in the rivers of Ohio due to the large amounts of oil. </p>
+            </div>
+
+            <!-- Timeline Four -->
+            <div class="timelineGridItem">
+                <p class="timelineGridText">After many fires in the Ohio river due to the oil pollution, the government responds by passing the Federal Water Pollution Control Act in 1972. This act and the Oil Pollution Act of 1990 regulates oil waste to rivers and funds better sewage plants.</p>
+            </div>
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/fire_icon.svg" alt="Fire Icon" title="Fire Icon">
+            </div>
+
+            <!-- Timeline Five -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/presentation_small_icon.svg" alt="Meter Icon" title="Meter Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">In 1972, research and scientific reports began studying plastic pollution and debris in the ocean of the Sargasso Sea.</p>
+            </div>
+
+            <!-- Timeline Six -->
+            <div class="timelineGridItem">
+                <p class="timelineGridText">In 1997, Charles J. Moore is coined to discover the Great Pacific Garbage Patch on a return from a yacht competition. The Great Pacific Garbage Patch was an accumulation of plastic waste in the ocean in a large area.</p>
+            </div class="timelineGridItem">
+            <div>
+                <img class="w3-image" src="./images/magnifying_glass_icon.svg" alt="Magnifying Glass Icon" title="Magnifying Glass Icon">
+            </div>
+
+            <!-- Timeline Seven -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/recycle_icon_white.svg" alt="Recycle Icon" title="Recycle Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">Richard Thompson, a Marine Biologist, founded the name “microplastics” to be plastic particles that are less than 5millimeters in size that are discovered in sediment and the surface of the ocean.</p>
+            </div>
+
+            <!-- Timeline Eight -->
+            <div class="timelineGridItem">
+                <p class="timelineGridText">In 2006, the rise in public attention of the Great Pacific Garbage Patch is due to an article by Ken Weiss. More research and scientific studies are now conducted due to this rise in attention.</p>
+            </div>
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/newspaper_icon.svg" alt="Newspaper Icon" title="Newspaper Icon">
+            </div>
+
+            <!-- Timeline Nine -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/shopping_bag_icon.svg" alt="Shopping Bag Icon" title="Shopping Bag Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">A Rolling Stone article, cited below, states that in 2011 Americans use approximately 102 billion plastic bags each year.</p>
+            </div>
+
+            <!-- Timeline Ten -->
+            <div class="timelineGridItem">
+                <p class="timelineGridText">Many solutions and advocations arise in protest to the rise of the pollution in the oceans. One of which is the Ocean Cleanup Project founded in 2013 by a former aerospace engineering student, Boyan Slat, funded and created to combat the Great Pacific Garbage Patch. And in two years, raises $2 million to start researching and testing.</p>
+            </div>
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/lightbulb_icon.svg" alt="Lightbulb Icon" title="Lightbulb Icon">
+            </div>
+
+            <!-- Timeline Eleven -->
+            <div class="timelineGridItem">
+                <img class="w3-image" src="./images/globe_white_icon.svg" alt="Globe Icon" title="Globe Icon">
+            </div>
+            <div class="timelineGridItem">
+                <p class="timelineGridText">From 2018 - 2021, multiple global agencies and governments have started to enact legislation to reduce pollution and regulate improper waste management practices to combat the pollution.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w3-container w3-dark-grey footerSection">
+        <div>
+            <p id="footerHeader">Pollution Station</p>
+            <p id="footerSubHeader">*This site is for educational purposes only.</p>
+        </div>
+
+        <!-- Grid Section -->
+            <div class="w3-grid footerGrid">
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Class Information:</p>
+
+                <ul class="footerSiteList">
+                    <li class="footerListItems">
+                        College: Collin College
+                    </li>
+                    <li class="footerListItems">
+                        Class: Interface Design
+                    </li>
+                    <li class="footerListItems">
+                        Student: Benjamin Gallegos
+                    </li>
+                    <li class="footerListItems">
+                        Last Edited: 04/27/2025
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Articles:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./imageGallery.html">Image Gallery</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./timeline.html">Timeline</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Website Resources Cited:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/" target="_blank">The Ocean Cleanup</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/great-pacific-garbage-patch/" target="_blank">The Ocean Cleanup - GPGP</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-pollution" target="_blank">National Oceanic and Atmospheric Administration</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://education.nationalgeographic.org/resource/marine-pollution/" target="_blank">National Geographic Article</a>
+                    </li>
+                    
+                    <li>
+                        <a class="footerLinks" href="https://www.conservation.org/stories/ocean-pollution-facts" target="_blank">Conservation International</a>
+                    </li>
+
+                    
+                    <li>
+                        <a class="footerLinks" href="https://doi.org/10.1787/de747aef-en" target="_blank">OECD (2022), Global Plastics Outlook: Economic Drivers, Environmental Impacts and Policy Options, OECD Publishing, Paris</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footerGridItem">
+                <p class="footerGridHeader">Image/Media Credits:</p>
+
+                <ul class="footerSiteList">
+                    <li>
+                        <a class="footerLinks" href="https://theoceancleanup.com/media-gallery/" target="_blank">The Ocean Cleanup - Gallery & Article Images</a>
+                    </li>
+
+                    <li>
+                        <a class="footerLinks" href="https://www.figma.com/community/file/1299091453336389256" target="_blank">Evericons - Icons</a>
+                    </li>
+                </ul>
+
+                <p id="footerNote">*The use of these images is for education purposes only. All rights remain with the image owners/designers.</p>
+            </div>
+
+            </div>
+    </footer>
+
+    <!-- Script from W3Schools - Sidebar Tutorial -->
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 </body>
 </html>
