@@ -1,6 +1,9 @@
 # interface_design_semester_project_final
 Semester project for Interface Design class. Purpose: to make a well designed, responsive, and accessible website for a Non-E-Commerce information site. Site must use modern techniques to be responsive and use CSS styles and/or frameworks.
 
+Figma Prototype:
+https://www.figma.com/design/hMBpHTvXUcWOMbnoS2i2Us/Interface_Design_Semester_Project?node-id=26-148&t=YcIPaMU3VNSbBJUW-1
+
 
 Website Resources Cited:
 Site - The Ocean Cleanup: https://theoceancleanup.com/great-pacific-garbage-patch/
