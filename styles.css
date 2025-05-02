@@ -79,6 +79,11 @@ Media Queries Breakpoints for Responsive Design
         width: 80%;
     }
 
+    #sectionOneHeaderContainer{
+        position: relative;
+        top: -150px;
+    }
+
     #sectionOneHeaderContainer > p{
         font-size: 2.5em;
     }
@@ -216,6 +221,11 @@ Media Queries Breakpoints for Responsive Design
     /* Section One */
     #globeImg{
         width: 50%;
+    }
+
+    #sectionOneHeaderContainer{
+        position: relative;
+        top: -180px;
     }
 
     #sectionOneHeaderContainer > p{
@@ -390,8 +400,15 @@ Media Queries Breakpoints for Responsive Design
 
     /* Section One */
     #globeImg{
-        width: 60%;
+        display: none;
     }
+
+    #sectionOneHeaderContainer{
+        position: relative;
+        top: 0;
+        margin-top: 2%;
+    }
+
 
     #sectionOneHeaderContainer > p{
         font-size: 4em;
@@ -518,6 +535,7 @@ Header Section
 header{
     background-color: var(--DarkSeafoam);
     box-shadow: 1px 1px 8px #000000ce;
+    z-index: 3;
 }
 
 header > div > div > h1{
@@ -547,7 +565,6 @@ nav > div > ul > li{
     text-align: center;
     background-color: var(--DarkOceanBlueFaded);
     color: #ffffff;
-    z-index: 3;
 }
 
 #sidebarButton{
@@ -574,13 +591,13 @@ Article/Main Section
 #globeImgContainer{
     /* position: relative; */
     text-align: center;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 #sectionOneHeaderContainer{
     background-color: var(--DarkOceanBlue);
     color: #ffffff;
-    /* z-index: 2; */
+    z-index: 2;
 }
 
 #sectionOneHeaderContainer > p{
