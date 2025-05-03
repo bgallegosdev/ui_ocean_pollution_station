@@ -1,0 +1,94 @@
+/* 
+***********************
+about.html styling page 
+***********************
+*/
+
+/* Google Fonts CSS */
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cabin-font {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* 
+***********************
+CSS Variables - Color Palette
+***********************
+white - #FFFFFF
+Deep Dark BlueGreen - #00171F
+Dark Ocean Blue - #003459
+Dark Seafoam - #007EA7
+Light Sky Blue Foam - #00A8E8
+*/
+:root{
+    --DeepDarkBlueGreen: #00171F;
+    --DarkOceanBlue: #003459;
+    --DarkSeafoam: #007EA7;
+    --LightSkyBlueFoam: #00A8E8;
+    --DarkOceanBlueFaded: #003459ed;
+}
+
+/* 
+***************
+Media Queries Breakpoints for Responsive Design
+***************
+*/
+
+/* Mobile */
+@media only screen and (max-width: 600px){
+    .formContainer{
+        font-size: 1.5em;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px){
+    .formContainer{
+        font-size: 2em;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1030px){
+    .formContainer{
+        font-size: 1.5em;
+    }
+}
+
+/* 
+***********************
+SIGN UP CSS
+***********************
+*/
+
+.formContainer{
+    margin: 2%;
+
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.inputBox{
+    border: 2px #000000 solid;
+    margin: 2%;
+}

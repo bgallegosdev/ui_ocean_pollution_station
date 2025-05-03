@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollution Station - About the Developer</title>
+    <title>Pollution Station - Sign Up</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="signUp.css">
 
     <!-- Google Fonts Stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="./images/trash_can.svg" type="image/x-icon">
 </head>
 <body>
+
     <!-- Header Section -->
     <header class="w3-container">
         <!-- Nav Bar -->
@@ -65,33 +66,50 @@
                 </div>
         </div>
     </header>
-    
-    <!-- Main Section -->
+
     <main class="w3-main">
-        <div class="w3-container">
-            <h1 id="aboutHeader">About the Developer</h1>
-        </div>
+        <div class="w3-container w3-center formContainer">
+            <form>
+                <div>
+                    <img class="w3-image" src="./images/trash_can.svg" alt="Trash Can Icon" title="Trash Can Icon">
+                </div>
 
-        <div class="w3-container w3-center">
-            <img class="w3-image w3-round-xlarge" src="./images/LinkedIn_headshot_medium_size_800x533.jpg" alt="">
-            <div class="aboutNameContainer">
+                <div>
+                    <h1>Sign Up Form</h1>
+                    <div class="w3-panel w3-blue w3-round">
+                        <span>*This form does not collect any data from the user. This form is for an Educational Site Use only. Submission does not send any data.</span>
+                    </div>
+                </div>
+
                 <br>
-                <span>Benjamin Gallegos</span>
-                <a href="https://www.linkedin.com/in/benjamin-gallegos/" target="_blank"><img src="./images/linkedin_icon.png" alt="LinkedIn Icon" title="LinkedIn Icon"></a>
-                <a href="https://github.com/bgallegosdev" target="_blank"><img src="./images/github_icon.svg" alt="GitHub Icon" title="GitHub Icon"></a>
-            </div>
-        </div>
 
-        <div class="w3-container aboutNoticeContainer">
-            <p id="aboutNoticeText">Please note, this site is being used for educational purposes only. All images are accredited to their official hosts/artists as indicated on the page or in the footer.</p>
-        </div>
+                <div>
+                    <label>Username:</label>
+                    <br>
+                    <input class="inputBox" type="text" placeholder="Username">
+                </div>
 
-        <div class="w3-container aboutBioContainer">
-            <p class="aboutBioText">Benjamin Gallegos is a current student at the Collin College for the Web Development and Software Development degree tracks. This website is the semester project final for the Interface Design class. This website was built to be responsive to different screen widths and devices as well as accessible through items such as alt text on images, easy to read font/typography, and keyboard focus.</p>
-        </div>
+                <div>
+                    <label>Password:</label>
+                    <br>
+                    <input class="inputBox" type="text" placeholder="Password">
+                </div>
 
-        <div class="w3-container aboutBioContainer">
-            <p class="aboutBioText">This website was meant to shine a light on ocean pollution and the growing problem of plastics in our oceans. I chose this topic because it is meaningful and I intended to provide more information on the topics such as the Great Pacific Garbage Patch.</p>
+                <br>
+
+                <div>
+                    <label>
+                    <input type="checkbox" name="Remember Me">
+                    <span>Educational Purposes Only - No Data Collected</span>
+                    </label>
+                </div>
+
+                <br>
+
+                <div>
+                    <button class="w3-button w3-blue w3-round-large">Create Account</button>
+                </div>
+            </form>
         </div>
     </main>
 
@@ -196,7 +214,7 @@
 
             </div>
     </footer>
-
+    
     <!-- Script from W3Schools - Sidebar Tutorial -->
     <script>
         function w3_open() {

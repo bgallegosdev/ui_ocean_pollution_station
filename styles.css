@@ -388,6 +388,11 @@ Media Queries Breakpoints for Responsive Design
         color: var(--DeepDarkBlueGreen);
     }
 
+    #signupBtnLarge{
+        font-size: 1.2em;
+        font-family: "DM Serif Text", serif;
+    }
+
     #sidebarButton{
         display: none;
     }
@@ -576,6 +581,11 @@ nav > div > ul > li{
     margin-top: 5%;
     background-color: var(--LightSkyBlueFoam);
     color: #000000;
+}
+
+#signupBtnLarge{
+    background-color: #000000;
+    color: #ffffff;
 }
 
 #closeBtn{
