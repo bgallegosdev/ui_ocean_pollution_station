@@ -4,6 +4,9 @@ Semester project for Interface Design class. Purpose: to make a well designed, r
 Figma Prototype:
 https://www.figma.com/design/hMBpHTvXUcWOMbnoS2i2Us/Interface_Design_Semester_Project?node-id=26-148&t=YcIPaMU3VNSbBJUW-1
 
+Privacy Policy Template Generation:
+Termly - https://termly.io/
+
 
 Website Resources Cited:
 Site - The Ocean Cleanup: https://theoceancleanup.com/great-pacific-garbage-patch/
