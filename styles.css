@@ -526,6 +526,13 @@ Media Queries Breakpoints for Responsive Design
     }
 }
 
+/* Desktop -Button background color */
+@media only screen and (min-width: 1545px){
+    #signupBtnLarge{
+        background-color: #000000;
+    }
+}
+
 /* 
 ***********************
 GLOBAL CSS
@@ -584,7 +591,6 @@ nav > div > ul > li{
 }
 
 #signupBtnLarge{
-    background-color: #000000;
     color: #ffffff;
 }
 
